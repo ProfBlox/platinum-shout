@@ -31,7 +31,7 @@ if(command === "shout") {
     const shoutMSG = args.join(" "); // Joins the arguments minus prefix to form the message to be shouted
         roblox.shout(GroupId, shoutMSG);
         console.log(`Shouted ${shoutMSG}`); // OPTIONAL - Logs specified string to the console
-        message.channel.send(`Shouted ${shoutMSG} to the group!`) // OPTIONAL - Sends a message to the channel
+        message.reply(`Shouted ${shoutMSG} to the group.`) // OPTIONAL - Sends a message to the channe
   })
 .catch(function (err) { // Catches any errors with the function
     console.error(err.stack);
