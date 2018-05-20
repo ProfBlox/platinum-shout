@@ -43,8 +43,8 @@ if(command === "setrank") {
 		return message.reply("You can't use this command.")
 	roblox.login(username, password)
 	.then(function () {
-		var user = Number(args[0])
-		var rank = Number(args[1])
+		let user = Number(args[0])
+		let rank = Number(args[1])
 		roblox.setRank(GroupId, user, rank);
 		console.log(`Promoted $user to $rank`)
 		message.channel.send(`Promoted $user to $rank`)
