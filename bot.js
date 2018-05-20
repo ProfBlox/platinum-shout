@@ -45,7 +45,7 @@ function isCommand(command, message){
 	return content.startsWith(prefix + command);
 }
 
-client.on('message', (message) => {
+bot.on('message', (message) => {
 	if (message.author.bot) return; // Dont answer yourself.
     var args = message.content.split(/[ ]+/)
     
