@@ -4,12 +4,12 @@ let roblox = require('roblox-js');
 let bot = new Discord.Client();
 
 // LOGIN INFO
-let username = ""; // ROBLOX
-let password = ""; // ROBLOX
+let username = "FlairHotelsBot"; // ROBLOX
+let password = "FlairHotels"; // ROBLOX
 
 // MISC
 let prefix = "!" // Prefix used for the command
-let GroupId = 3944945;
+let GroupId = 4040978;
 
 // COMMAND
 
