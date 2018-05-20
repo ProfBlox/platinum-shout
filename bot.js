@@ -39,17 +39,7 @@ if(command === "shout") {
   }
 })
 
-function isCommand(command, message){
-	var command = command.toLowerCase();
-	var content = message.content.toLowerCase();
-	return content.startsWith(prefix + command);
-}
-
-bot.on('message', (message) => {
-	if (message.author.bot) return; // Dont answer yourself.
-    var args = message.content.split(/[ ]+/)
-    
-    if(isCommand('Promote', message)){
+if(isCommand('Promote', message)){
     	var username = args[1]
     	if (username){
     		message.channel.send(`Checking ROBLOX for ${username}`)
