@@ -13,6 +13,11 @@ let GroupId = 3707773;
 
 // COMMAND
 
+client.on("ready", () => {
+  client.user.setGame(`with shouts!`);
+  console.log(`Ready to serve on ${client.guilds.size} servers, for ${client.users.size} users.`);
+});
+
 bot.on("message", async message => { // Event runs when there is a new message
 if(message.author.bot) return; // Here we check if the message sender is the bot, if it is, it returns and does not carry any further.
 if(message.content.indexOf(prefix) !== 0) return; // Checks if the message has the Prefix
