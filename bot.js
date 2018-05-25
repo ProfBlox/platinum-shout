@@ -24,7 +24,7 @@ const command = args.shift().toLowerCase();
 // Checks if the command is matching the provided string
 
 if(command === "shout") {
-    if(!message.member.roles.some(r=>["High Ranks"].includes(r.name)) ) // OPTIONAL - Checks if the sender has the specified roles to carry on further
+    if(!message.member.roles.some(r=>["High Rank"].includes(r.name)) ) // OPTIONAL - Checks if the sender has the specified roles to carry on further
         return message.reply("You can't use this command.");
   roblox.login(username, password)
   .then(function () {
