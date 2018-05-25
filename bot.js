@@ -13,7 +13,7 @@ let GroupId = 3707773;
 
 // COMMAND
 
-client.on("ready", () => {
+bot.on("ready", () => {
   client.user.setGame(`with shouts!`);
   console.log(`Ready to serve on ${client.guilds.size} servers, for ${client.users.size} users.`);
 });
